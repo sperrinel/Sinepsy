@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+  <title>Document</title>
+</head>
+<body>
+  {{produits | json}}
+
+<div id="columns" class="columns_5" *ngFor="let item of produits">
+  <figure>
+  <img src="https://i.imgur.com/ruU04I6.jpg">
+	<figcaption>Green Checkered Shirt</figcaption>
+    <span class="price">{{item.prix}}</span>
+    <a class="button" href="#">Buy Now</a>
+	</figure>
+	</div>
+</body>
+</html>
