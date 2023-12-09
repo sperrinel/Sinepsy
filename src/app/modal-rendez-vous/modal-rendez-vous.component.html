@@ -1,0 +1,53 @@
+<div
+  class="modal fade"
+  id="modalRdv"
+  tabindex="-1"
+  aria-labelledby="modalRdvLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable"
+  >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalRdvlLabel">Motif de consultation</h4>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          style="opacity: 1"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p id="modalBodyRdv">
+          Afin de prendre rendez-vous, il va vous être demandé de choisir entre
+          la consultation pour
+          <b style="color: rgb(0, 106, 255)">"Psychothérapie"</b> ou la
+          consultation pour
+          <b style="color: rgb(0, 106, 255)">"Neuropsychologie"</b>, si vous
+          avez besoin d'aide pour faire votre choix cliquez sur
+          <b>besoin d'aide</b>, sinon cliquez sur <b>continuer</b>.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+          (click)="goToHelp()"
+        >
+          Besoin d'aide
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="goToContinue()"
+          data-bs-dismiss="modal"
+        >
+          Continuer
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

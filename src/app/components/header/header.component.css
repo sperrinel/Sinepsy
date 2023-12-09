@@ -1,11 +1,101 @@
 @media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{   }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
 }
 
-.nav-item{
-  font-size:20px;
+nav{
+  background: #112e42!important;
+
 }
+
+#doctolibLogo{
+  height: 80px;
+  width: auto;
+}
+
+.header-item{
+  align-self: center;
+      text-align: center;
+}
+
+#sinepsyLogo{
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+
+.nav-item {
+  font-size: 20px;
+}
+
+#btn-rdv-doctolib {
+  color: rgba(0, 0, 0, 0.555);
+  font-family: Quenda, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#btn-rdv-doctolib:hover {
+  background: #94d3fd 100%;
+  color: white;
+
+}
+
+nav{
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 20px;
+  margin-bottom: 10px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.float2 {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 100px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(67, 100, 133);
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+
+.float2:hover, .float:hover{
+  width: 65px;
+  height: 65px;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
 

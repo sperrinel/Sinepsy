@@ -1,0 +1,17 @@
+body{
+  padding-top: 3%;
+  padding-bottom: 5%;
+  background-image: url(/assets/images/services-neuro-psycho/background-body-services.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row{
+  margin-left:3%;
+  margin-right:3%;
+}
+
+
+p{
+  text-align: justify;
+}

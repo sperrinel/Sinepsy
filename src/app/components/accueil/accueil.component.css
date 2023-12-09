@@ -1,0 +1,110 @@
+@media (max-width: 1250px) {
+  body {
+    background-image: none !important;
+  }.img-lampe-cabinet{
+    width:0px;
+    height:0px;
+  }
+}
+
+.container2{
+  background: white;
+  margin-right:5%;
+
+}
+
+.img-lampe-cabinet{
+  position: absolute;
+  bottom: 0%;
+  left:0%;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.bordure-gauche{
+
+  background-repeat: no-repeat;;
+  background-position: center;
+}
+
+.paragraphe{
+  text-align: justify;
+}
+
+body{
+  position: relative;
+
+background-image: url(/assets/images/accueil/background-body-accueil.png);
+background-size: cover;
+background-repeat: no-repeat;
+}
+#container-global{
+  margin-top: 0!important;
+}
+
+.rubrique{
+  max-width: 100%;
+  height: auto;
+  margin: 2%;
+
+  border-radius: 25%;
+}
+
+label{
+  font-size:25px;
+  font-family: "Philosopher-Regular", "Helvetica Neue", Helvetica, Arial;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#paragraphe-3{
+  margin-bottom: 70px!important;
+}
+
+.rubrique:hover{
+width:315px;
+height:315px;
+}
+.rubrique{
+
+  margin-bottom:5px;
+  cursor: pointer;
+}
+
+.col-sm-4{
+
+  display:flex;
+  justify-content:center;
+
+}
+
+#rubrique{
+  margin-bottom: 10%;
+}
+
+.center-image{
+  text-align: -webkit-center;
+  display: block;
+}
+
+h2:hover {
+
+    color: rgba(183, 180, 180, 0.804);
+    cursor: pointer;
+}
+
+p, h4, h3{
+  margin-bottom:40px;
+}
+
+h4,h3{
+
+  text-align: justify;
+}
+
+h3{
+  margin-top:50px;
+}
+
+

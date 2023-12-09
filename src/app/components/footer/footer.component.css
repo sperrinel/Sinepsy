@@ -1,0 +1,83 @@
+
+.blue-purple-gredient {
+
+
+  background:#112e42;
+
+}
+
+.infos-sinepsy{
+  background: #22bfbf08;
+
+}
+
+#container-infos{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+h6, h5{
+
+  font-size: 20px;
+    margin: 15px;
+    margin-top: 25px;
+    color: #22bfbf8b;
+}
+
+.fa{
+  font-size: 21px;
+  margin-right: 15px;
+}
+
+
+p{
+
+ color:white;
+  font-size: 18px;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: justify;
+}
+
+h1{
+  font-family: "Philosopher-regular", "arial", "sans-serif";
+  margin: 25px;
+  color: white;
+}
+
+.iframe-position{
+  margin-top: 13%;
+  margin-left: 15%;
+  margin-right: 25%;
+
+
+}
+
+iframe{
+  border: 1.5px solid !important;
+  border-color: rgb(51, 237, 237) !important;
+}
+
+#intro-footer{
+  margin-bottom: 45px;
+  margin-left:0;
+  text-align: center!important;
+  color:white!important;
+}
+
+@media (max-width: 1220px) {
+  .iframe-position{
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  iframe{
+    width:320px!important;
+              height:320px!important;
+  }
+ }
+
+ a{
+  font-size:15px;
+ }

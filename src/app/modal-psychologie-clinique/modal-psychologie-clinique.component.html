@@ -1,0 +1,53 @@
+<div
+  class="modal fade"
+  id="modalPsychologieClinique"
+  tabindex="-1"
+  aria-labelledby="modalPsychologieCliniqueLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+  >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPsychologieCliniqueLabel">
+          Psychologie clinique
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <h4><b>Définition:</b></h4>
+        <p>
+          La psychologie clinique est une branche de la psychologie qui se
+          concentre sur l'évaluation, le diagnostic et le traitement des
+          troubles mentaux et émotionnels. Elle vise à comprendre et à soulager
+          la détresse psychologique en utilisant des approches thérapeutiques
+          basées sur des méthodes scientifiques. Les psychologues cliniciens
+          travaillent souvent en étroite collaboration avec les patients pour
+          identifier les causes sous-jacentes des problèmes psychologiques et
+          pour promouvoir le bien-être mental. Leur objectif principal est
+          d'améliorer la qualité de vie des individus en leur fournissant un
+          soutien adapté et des stratégies d'adaptation efficaces.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+          (click)="goToHelp()"
+        >
+          En savoir plus
+        </button>
+        <button type="button" class="btn btn-primary" (click)="goToContinue()">
+          Prendre RDV
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

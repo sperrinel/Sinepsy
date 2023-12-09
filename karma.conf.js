@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/Altagama'),
+      dir: require('path').join(__dirname, './coverage/Sinepsy'),
       subdir: '.',
       reporters: [
         { type: 'html' },
@@ -39,6 +39,9 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true
-  });
+    restartOnFileChange: true,
+    files: [
+      'src/app/models/cart.spec.ts',
+      // Autres fichiers nécessaires pour les tests
+    ],});
 };

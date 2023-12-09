@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Altagama": {
+    "Sinepsy": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Altagama",
+            "outputPath": "dist/Sinepsy",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,11 @@
               "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.js",
+              "src/assets/fichiersJS/aPropos.js",
+              "src/assets/fichiersJS/header.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -62,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Altagama:build"
+            "browserTarget": "Sinepsy:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Altagama:build:production"
+              "browserTarget": "Sinepsy:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Altagama:build"
+            "browserTarget": "Sinepsy:build"
           }
         },
         "test": {
@@ -90,7 +94,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/app/models/cart.spec.ts"
+            ]
           }
         },
         "lint": {
@@ -110,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Altagama:serve"
+            "devServerTarget": "Sinepsy:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Altagama:serve:production"
+              "devServerTarget": "Sinepsy:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Altagama"
+  "defaultProject": "Sinepsy"
 }

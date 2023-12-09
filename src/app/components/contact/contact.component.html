@@ -1,1 +1,131 @@
-<p>contact works!</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta
+      name="description"
+      content="Prêt à démarrer votre projet de site internet ? Contactez-nous ! Nous sommes ravis de mettre notre expertise à votre service pour concrétiser vos idées numériques."
+    />
+    <title>Formulaire de Contact</title>
+    <head> </head>
+  </head>
+  <body>
+    <div
+      class="modal fade"
+      id="modalContact"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalContactLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header" style="background: white">
+            <h5 class="modal-title" id="staticBackdropLabel">Contact</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              (click)="ngOnDestroy()"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="center" *ngIf="messageOk == false">
+              <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <div class="inputbox">
+                  <input
+                    type="text"
+                    required="required"
+                    name="nom"
+                    placeholder="Votre nom et prénom*"
+                    formControlName="nom"
+                  />
+                </div>
+                <div class="inputbox">
+                  <select
+                    id="idTypeRdv"
+                    required="required"
+                    name="typeRdv"
+                    formControlName="typeRdv"
+                  >
+                    <option value="" disabled selected>
+                      Motif de consultation*
+                    </option>
+                    <option value="Psychologie clinique">
+                      Psychologie clinique
+                    </option>
+                    <option value="Neuropsychologie">Neuropsychologie</option>
+                  </select>
+                </div>
+                <div class="inputbox">
+                  <input
+                    type="email"
+                    required="required"
+                    name="email"
+                    placeholder="Email*"
+                    formControlName="email"
+                  />
+                </div>
+                <div class="inputbox">
+                  <input
+                    type="number"
+                    required="required"
+                    name="tel"
+                    placeholder="Téléphone*"
+                    formControlName="tel"
+                  />
+                </div>
+                <div class="inputbox">
+                  <input
+                    type="text"
+                    required="required"
+                    name="msg"
+                    placeholder="Votre Message*"
+                    formControlName="msg"
+                  />
+                </div>
+
+                <div class="inputbox">
+                  <button
+                    class="btn btn-primary"
+                    style="float: inline-end"
+                    value="submit"
+                    [disabled]="contactForm.invalid"
+                  >
+                    Envoyer
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div *ngIf="messageOk == true" style="text-align: center">
+              <p>Message envoyé avec succès</p>
+              <span>
+                <i
+                  class="fa fa-check"
+                  style="margin-left: 8px; color: rgb(21, 165, 21)"
+                ></i
+              ></span>
+            </div>
+
+            <div *ngIf="messageErr == true" style="text-align: center">
+              <p>Erreur lors de l'envoi du message</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
